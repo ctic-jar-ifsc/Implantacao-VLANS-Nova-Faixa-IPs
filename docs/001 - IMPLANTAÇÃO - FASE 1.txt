@@ -1,0 +1,25 @@
+Após o término da implantação da InfraEstrutura física por parte da empresa responsável, passamos a efetuar um pente fino, a fim de organizar o cabeamento tanto do Datacenter / CPD, como de alguns Racks de Distribuição, no intuito de facilitar a identificação dos pontos durante a implantação da nova Rede IP, a configuração dos equipamentos switch e das manutenções futuras
+
+Em seguida, passamos para a definição da nova rede lógica (Novo Bloco de IPs da RNP), através da escolha das novas Subredes e VLANs de acordo com os 512 IPs públicos disponíveis, além das Faixas IPv6 (Esta sem a limitação de quantidade de IPs disponíveis).
+
+Após esta definição, passamos a realizar a configuração de todos os cerca de 20 equipamentos  Switch Gerenciáveis, responsáveis por concentrar o cabeamento estruturado do campus, onde esta configuração inclui:
+- definição de usuários/senhas de acesso através de SSH / Telnet seguro
+- criação das VLANs definidas anteriormente
+- definição de portas tronco de forma padronizada
+- documentação através de planílha específica
+ 
+A implementação do ambiente foi iniciada com a instação e configuração do Switch Camada 3 em modo Roteador, sendo ele responsável por todo o roteamento de VLANS, Filtro de Pacotes através de ACL, DHCP-Relay, etc, ou seja, ele passa a ser o coração da rede neste modelo. 
+Também instalamos um novo servidor Firewall PFsense, sendo este responsável apenas pelo filtro dos pacotes que entram e saem para a Internet, através do link direto com nosso roteador de saída e com a rede interna (Switch Camada 3).
+
+Com tudo isto feito, finalmente passamos a fase de implantação. Neste primeiro momento fizemos a migração em dois ambientes:
+- TI: Temos uma VLAN específica para estes servidores, uma vez que precisamos de acessos exclusivos à manutenção dos servidores de redes entre outros.
+- Laboratório A1: Primeiro laboratório em fase de testes com a nova rede
+
+A migração agora ocorrerá aos poucos, assim, evitaremos maiores transtornos e ela tenderá a ocorrer de forma transparente pelos usuários
+
+
+Com relação à documentação dos Racks, Switchs e Patch Panels do Campus, ainda estamos definindo quais padrões utilizaremos. Algumas propostas incluem o uso de CorelDraw para desenho dos equipamentos, ou então de alguma ferramenta mais específica para este uso como o Microsoft Visio.
+
+Por hora, estamos atualizando a descrição das próprias portas dos Switches para a idetificação dos pontos.
+
+
