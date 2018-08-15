@@ -28,7 +28,7 @@ Por fim, com o recente esgotamento dos IPs públicos no mundo todo, será inevit
 
 
 
-## Implantação 
+## (14/08/2018) - Implantação 
 
 Após o término da implantação da InfraEstrutura física por parte da empresa responsável, passamos a efetuar um pente fino, a fim de organizar o cabeamento tanto do Datacenter / CPD, como de alguns Racks de Distribuição, no intuito de facilitar a identificação dos pontos durante a implantação da nova Rede IP, a configuração dos equipamentos switch e das manutenções futuras
 
