@@ -28,6 +28,16 @@ Por fim, com o recente esgotamento dos IPs públicos no mundo todo, será inevit
 
 
 
+## (21/08/2018) - Novos Ambientes Migrados e controle por ACL 
+
+Foi concluida a migração dos 2 laboratórios de informática restantes, contabilizando assim em torno de 100 computadores já utilizando a nova faixa IP, ou em torno de 40% do parque de computadores:
+- A5 - Laboratório de Informática
+- A6 - Laboratório de Informática
+
+Além disso, foram configuradas regras de filtro ACL, para assim, fornecer apenas acesso básico a estes computadores de uso acadêmico, protegendo a rede de geração de SPAM, vírus e outros ataques, além da restrição para evitar o uso indevíduo de softwares como torrent e jogos online.
+
+
+
 ## (14/08/2018) - Implantação 
 
 Após o término da implantação da InfraEstrutura física por parte da empresa responsável, passamos a efetuar um pente fino, a fim de organizar o cabeamento tanto do Datacenter / CPD, como de alguns Racks de Distribuição, no intuito de facilitar a identificação dos pontos durante a implantação da nova Rede IP, a configuração dos equipamentos switch e das manutenções futuras
